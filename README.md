@@ -44,7 +44,7 @@ performing.
 import robustnessgym as rg
 
 # Load any dataset
-sst = rg.DataPanel.from_huggingface('sst', split='validation')
+sst = rg.DataPanel.from_huggingface('sst', name='default', split='validation')
 
 # Load any model
 sst_model = rg.HuggingfaceModel('distilbert-base-uncased-finetuned-sst-2-english', is_classifier=True)
